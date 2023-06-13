@@ -24,6 +24,34 @@
       "price": "3",
       "thumbnail": "https://m.media-amazon.com/images/P/1501171348.01._SCLZZZZZZZ_SX500_.jpg",
       "id": 3
+    },
+    {
+      "name": "Think In A JavaScript Way",
+      "price": "12",
+      "author": "JavaScript",
+      "thumbnail": "https://blog.logrocket.com/wp-content/uploads/2021/02/machine-learning-libraries-javascript.png",
+      "id": 4
+    },
+    {
+      "name": "CSS Best Guide",
+      "price": "05",
+      "author": "CSS",
+      "thumbnail": "https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials.jpg",
+      "id": 5
+    },
+    {
+      "name": "CSS Best Guide",
+      "price": "12",
+      "author": "css",
+      "thumbnail": "https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials.jpg",
+      "id": 6
+    },
+    {
+      "name": "HTML Best Guide",
+      "price": "06",
+      "author": "HTML",
+      "thumbnail": "https://www.freecodecamp.org/news/content/images/2021/08/html.png",
+      "id": 7
     }
   ]
 }

@@ -24,9 +24,9 @@ const Books = () => {
     content = books.map(book => <Book key={book.id} book={book} />);
   }
   return (
-    <div className=" container mt-5">
-      <div className="text-center mt-5 mb-5">Books Collection</div>
-      <div className="d-flex flex-wrap mx-auto">
+    <div className=" m-5 mt-5">
+      <div className="text-center mt-5 mb-5"><h4>Books Collection</h4></div>
+      <div className="d-flex flex-wrap ">
         {content}
       </div>
     </div>
