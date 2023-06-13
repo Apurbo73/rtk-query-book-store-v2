@@ -16,7 +16,13 @@ export const apiSlice = createApi({
       query: data => ({
         url: `/books`,
         method: "POST",
-        body:data
+        body: data
+      })
+    }),
+    deleteBook: builder.mutation({
+      query: id => ({
+        url: `/books/${id}`,
+        method: "DELETE"
       })
     })
   })
@@ -25,5 +31,6 @@ export const apiSlice = createApi({
 export const {
   useGetAllBookQuery,
   useGetSingleBookQuery,
-  useAddBookMutation
+  useAddBookMutation,
+  useDeleteBookMutation
 } = apiSlice;
