@@ -8,8 +8,11 @@ export const apiSlice = createApi({
     //get all books:
     getAllBook: builder.query({
       query: () => "/books"
+    }),
+    getSingleBook: builder.query({
+      query: id => `/books/${id}`
     })
   })
 });
 
-export const { useGetAllBookQuery } = apiSlice;
+export const { useGetAllBookQuery, useGetSingleBookQuery } = apiSlice;
