@@ -53,8 +53,8 @@ const ViewDetail = ({ book }) => {
             >
               Delete
             </button>
-            <Link to="/" className="btn btn-dark w-50 mt-1 m-1">
-              Home
+            <Link to={`/books/edit/${id}`} className="btn btn-dark w-50 mt-1 m-1">
+              Edit
             </Link>
           </div>
         </div>

@@ -6,6 +6,8 @@ import Home from "./component/Home";
 import About from "./component/About";
 import Detail from "./component/detail/Detail";
 import AddBook from "./component/add/AddBook";
+import EditPage from "./component/edit/EditPage";
+import Footer from "./component/footer/Footer";
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/books/:id" element={<Detail />} />
         <Route path="/books/add" element={<AddBook />} />
+        <Route path="/books/edit/:id" element={<EditPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
