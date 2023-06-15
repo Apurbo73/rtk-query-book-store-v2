@@ -4,7 +4,7 @@ export const apiSlice = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "http://localhost:3001"
   }),
-  tagTypes: ["Books","Book"],
+  tagTypes: ["Books", "Book"],
   endpoints: builder => ({
     //get all books:
 
@@ -16,8 +16,11 @@ export const apiSlice = createApi({
     getSingleBook: builder.query({
       query: id => `/books/${id}`,
       providesTags: ["Book"]
-
     }),
+
+    // searchBook: builder.query({
+    //   query: title => `/books/${title}`
+    // }),
     addBook: builder.mutation({
       query: data => ({
         url: `/books`,
@@ -39,8 +42,7 @@ export const apiSlice = createApi({
         method: "PUT",
         body: data
       }),
-      invalidatesTags: ["Books","Book"]
-
+      invalidatesTags: ["Books", "Book"]
     })
   })
 });
@@ -50,5 +52,6 @@ export const {
   useGetSingleBookQuery,
   useAddBookMutation,
   useDeleteBookMutation,
-  useEditBookMutation
+  useEditBookMutation,
+  useSearchBookQuery
 } = apiSlice;

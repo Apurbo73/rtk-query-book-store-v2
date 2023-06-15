@@ -5,7 +5,7 @@ const Book = ({ book }) => {
   const { name, author, thumbnail, price, id } = book;
   return (
     <div>
-      <div className="card m-2 text-center shadow-lg p-1 mb-5 bg-body rounded" style={{ width: "14rem" }}>
+      <div className="card m-2 text-center shadow-lg p-1 mb-5 bg-body rounded" style={{ width: "15rem" }}>
         <img
           style={{ height: 250 }}
           src={thumbnail}
